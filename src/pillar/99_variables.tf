@@ -180,15 +180,6 @@ variable "key_vault_rg_name" {
   description = "Key Vault - rg name"
 }
 
-#
-# ⛴ AKS
-#
-variable "aks_num_outbound_ips" {
-  type        = number
-  default     = 1
-  description = "How many outbound ips allocate for AKS cluster"
-}
-
 locals {
   project = "${var.prefix}-${var.env_short}"
 

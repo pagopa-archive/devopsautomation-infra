@@ -64,7 +64,6 @@ if echo "init plan apply refresh import output state taint destroy" | grep -w "$
     terraform "${ACTION}" \
     -compact-warnings \
     -var-file="../.env/${ENV}/terraform.tfvars" \
-    -var-file="../.env/${ENV}/kubernetes.tfvars" \
     $other
   fi
 else
