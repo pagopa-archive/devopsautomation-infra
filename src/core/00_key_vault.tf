@@ -21,15 +21,3 @@ data "azurerm_key_vault" "kv" {
 #   name         = "sec-storage-id"
 #   key_vault_id = data.azurerm_key_vault.kv.id
 # }
-
-## 🎫  Certificates
-
-data "azurerm_key_vault_certificate" "app_gw_platform" {
-  name         = var.app_gateway_api_certificate_name
-  key_vault_id = data.azurerm_key_vault.kv.id
-}
-
-data "azurerm_key_vault_certificate" "apim_internal" {
-  name         = var.apim_api_internal_certificate_name
-  key_vault_id = data.azurerm_key_vault.kv.id
-}

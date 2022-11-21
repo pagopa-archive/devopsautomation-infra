@@ -6,7 +6,7 @@ Terraform template repository for infrastructures projects
 
 ### Change the template name
 
-In this template we use `devopsautomation` or `dvopla` to define ours project, but you need to change all the information, to be complaint with your project
+In this template we use `devopsautomation` or `dvopau` to define ours project, but you need to change all the information, to be complaint with your project
 
 Inside:
 
@@ -20,7 +20,7 @@ Change this informations
 # general
 env_short      = "d"
 env            = "dev"
-prefix         = "dvopla"
+prefix         = "dvopau"
 location       = "northeurope"
 location_short = "neu"
 
