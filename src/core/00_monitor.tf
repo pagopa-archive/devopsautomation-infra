@@ -24,3 +24,16 @@ data "azurerm_monitor_action_group" "email" {
   resource_group_name = local.monitor_rg_name
   name                = local.monitor_action_group_email_name
 }
+
+#
+# prod-error
+#
+data "azurerm_key_vault_secret" "alert_error_notification_email" {
+  name         = "alert-error-notification-email"
+  key_vault_id = data.azurerm_key_vault.kv.id
+}
+
+data "azurerm_key_vault_secret" "alert_error_notification_slack" {
+  name         = "alert-error-notification-slack"
+  key_vault_id = data.azurerm_key_vault.kv.id
+}
